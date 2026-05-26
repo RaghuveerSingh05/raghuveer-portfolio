@@ -15,7 +15,7 @@ export default function Sidebar() {
       <div className="mb-10">
 
         <h1 className="pixel-title text-[10px] leading-5 text-[#6D28D9]">
-          RAGHUVEER.DEV
+          
         </h1>
 
       </div>

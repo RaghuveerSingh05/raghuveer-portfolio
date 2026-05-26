@@ -30,7 +30,7 @@ export default function Contact() {
               <FaEnvelope />
 
               <p>
-                yourmail@gmail.com
+                raguhveersinghshekhawat2005@gmail.com
               </p>
 
             </div>
@@ -48,7 +48,7 @@ export default function Contact() {
               <FaPhone />
 
               <p>
-                +91 XXXXX XXXXX
+                +91 80858 23115 
               </p>
 
             </div>
@@ -72,7 +72,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/raghuveer-singh-shekhawat-ab589332b/"
             target="_blank"
             className="flex items-center gap-2 bg-[#0891B2] text-white px-6 py-3 border-4 border-[#3A312B]"
           >
