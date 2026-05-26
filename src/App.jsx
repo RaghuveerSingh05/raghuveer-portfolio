@@ -1,15 +1,17 @@
+// src/App.jsx
+
 import Sidebar from "./components/Sidebar";
 import MobileNav from "./components/MobileNav";
 import Landing from "./components/Landing";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Terminal from "./components/Terminal";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="crt flex bg-[#0B1020] text-white">
+    <div className="crt flex min-h-screen bg-[#F4F1E8] text-[#1E1B18]">
 
       <MobileNav />
 
@@ -26,7 +28,7 @@ export default function App() {
         <Projects />
 
         <Terminal />
-        
+
         <Contact />
 
         <Footer />

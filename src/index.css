@@ -1,15 +1,33 @@
+/* src/index.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #0B1020;
-  color: white;
+  color: #1E1B18;
   font-family: 'Pixelify Sans', sans-serif;
+
+  background-color: #F4F1E8;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+
+  background-size: 28px 28px;
 }
+
+.pixel-title {
+  font-family: 'Press Start 2P', cursive;
+}
+
 .crt::before {
   content: "";
   position: fixed;
@@ -17,32 +35,28 @@ body {
 
   background:
     linear-gradient(
-      rgba(255,255,255,0.03) 50%,
+      rgba(0,0,0,0.02) 50%,
       transparent 50%
     );
 
   background-size: 100% 4px;
 
   pointer-events: none;
-
   z-index: 999;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B1020;
+  background: #F4F1E8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: #3A312B;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #22D3EE;
-}
-
-.pixel-title {
-  font-family: 'Press Start 2P', cursive;
+  background: #0891B2;
 }

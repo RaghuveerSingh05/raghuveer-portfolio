@@ -1,3 +1,5 @@
+// src/components/Skills.jsx
+
 import skills from "../data/skills";
 import SectionTitle from "./SectionTitle";
 
@@ -13,7 +15,7 @@ export default function Skills() {
 
           <div
             key={skill}
-            className="bg-[#111827] border border-[#374151] p-4 text-center hover:border-cyan-400 hover:-translate-y-1 transition duration-300"
+            className="bg-[#E7DFC9] border-4 border-[#3A312B] p-4 text-center hover:-translate-y-1 transition"
           >
             {skill}
           </div>

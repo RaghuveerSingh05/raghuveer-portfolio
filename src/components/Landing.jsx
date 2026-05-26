@@ -1,3 +1,5 @@
+// src/components/Landing.jsx
+
 export default function Landing() {
   return (
     <section
@@ -5,9 +7,13 @@ export default function Landing() {
       className="min-h-[80vh] flex flex-col justify-center space-y-8"
     >
 
-      <p className="text-green-400 text-sm md:text-base">
-        {">"} SYSTEM STATUS: ONLINE
-      </p>
+      <div className="bg-[#E7DFC9] border-4 border-[#3A312B] p-3 inline-block w-fit">
+
+        <p className="text-sm">
+          C:\RAGHUVEER_DEV{">"} STATUS ONLINE
+        </p>
+
+      </div>
 
       <div>
 
@@ -17,7 +23,7 @@ export default function Landing() {
           SHEKHAWAT
         </h1>
 
-        <p className="text-cyan-400 text-xl md:text-3xl mt-8">
+        <p className="text-[#0891B2] text-xl md:text-3xl mt-8">
           Game Developer &
           <br />
           Aspiring Software Engineer
@@ -25,14 +31,27 @@ export default function Landing() {
 
       </div>
 
-      <div className="bg-[#111827] border border-[#374151] p-6 max-w-3xl">
+      <div className="bg-[#E7DFC9] border-4 border-[#3A312B] max-w-3xl">
 
-        <p className="text-lg leading-relaxed text-gray-300">
-          Building games, AI systems,
-          gameplay mechanics, and
-          interactive digital experiences
-          with modern technologies.
-        </p>
+        <div className="bg-[#3A312B] h-10 flex items-center gap-2 px-4">
+
+          <div className="w-4 h-4 bg-red-400"></div>
+
+          <div className="w-4 h-4 bg-yellow-400"></div>
+
+          <div className="w-4 h-4 bg-green-400"></div>
+
+        </div>
+
+        <div className="p-6">
+
+          <p className="text-lg leading-relaxed">
+            Building games, gameplay systems,
+            AI mechanics, and interactive software
+            experiences using modern technologies.
+          </p>
+
+        </div>
 
       </div>
 
@@ -40,15 +59,15 @@ export default function Landing() {
 
         <a
           href="#projects"
-          className="bg-purple-600 px-6 py-3 border-2 border-black hover:bg-purple-500 transition"
+          className="bg-[#6D28D9] text-white px-6 py-3 border-4 border-[#3A312B] hover:-translate-y-1 transition"
         >
-          VIEW PROJECTS
+          PROJECTS
         </a>
 
         <a
           href="https://github.com/RaghuveerSingh05"
           target="_blank"
-          className="bg-cyan-500 text-black px-6 py-3 border-2 border-black hover:bg-cyan-400 transition"
+          className="bg-[#0891B2] text-white px-6 py-3 border-4 border-[#3A312B] hover:-translate-y-1 transition"
         >
           GITHUB
         </a>

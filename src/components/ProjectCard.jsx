@@ -1,3 +1,5 @@
+// src/components/ProjectCard.jsx
+
 export default function ProjectCard({
   title,
   stack,
@@ -5,27 +7,41 @@ export default function ProjectCard({
   github,
 }) {
   return (
-    <div className="bg-[#111827] border border-[#374151] p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[6px_6px_0px_#000]">
+    <div className="bg-[#E7DFC9] border-4 border-[#3A312B]">
 
-      <h3 className="pixel-title text-sm md:text-lg mb-4">
-        {title}
-      </h3>
+      <div className="bg-[#3A312B] h-10 flex items-center gap-2 px-4">
 
-      <p className="text-cyan-400 mb-4">
-        {stack}
-      </p>
+        <div className="w-4 h-4 bg-red-400"></div>
 
-      <p className="text-gray-300 leading-relaxed mb-6">
-        {description}
-      </p>
+        <div className="w-4 h-4 bg-yellow-400"></div>
 
-      <a
-        href={github}
-        target="_blank"
-        className="inline-block bg-cyan-500 text-black px-4 py-2 border-2 border-black hover:bg-cyan-400 transition"
-      >
-        VIEW PROJECT
-      </a>
+        <div className="w-4 h-4 bg-green-400"></div>
+
+      </div>
+
+      <div className="p-6">
+
+        <h3 className="pixel-title text-sm md:text-lg mb-4">
+          {title}
+        </h3>
+
+        <p className="text-[#0891B2] mb-4">
+          {stack}
+        </p>
+
+        <p className="leading-relaxed mb-6">
+          {description}
+        </p>
+
+        <a
+          href={github}
+          target="_blank"
+          className="inline-block bg-[#6D28D9] text-white px-4 py-2 border-4 border-[#3A312B] hover:-translate-y-1 transition"
+        >
+          VIEW PROJECT
+        </a>
+
+      </div>
 
     </div>
   );

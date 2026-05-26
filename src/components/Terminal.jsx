@@ -1,25 +1,27 @@
+// src/components/Terminal.jsx
+
 import SectionTitle from "./SectionTitle";
 
 export default function Terminal() {
   return (
     <section
       id="terminal"
-      className="bg-black border border-green-500 p-6"
+      className="bg-[#1E1B18] border-4 border-[#3A312B] text-green-400 p-6"
     >
 
       <SectionTitle title="TERMINAL" />
 
-      <div className="space-y-3 text-green-400">
+      <div className="space-y-3">
 
-        <p>{">"} STATUS: ONLINE</p>
+        <p>C:\RAGHUVEER_DEV{">"} SYSTEM ONLINE</p>
 
-        <p>{">"} Learning Data Structures...</p>
+        <p>C:\RAGHUVEER_DEV{">"} Learning DSA...</p>
 
-        <p>{">"} Exploring AI Systems...</p>
+        <p>C:\RAGHUVEER_DEV{">"} Building Games...</p>
 
-        <p>{">"} Building Games...</p>
+        <p>C:\RAGHUVEER_DEV{">"} Exploring AI Systems...</p>
 
-        <p>{">"} Current Objective: LEVEL UP</p>
+        <p>C:\RAGHUVEER_DEV{">"} STATUS ACTIVE _</p>
 
       </div>
 
