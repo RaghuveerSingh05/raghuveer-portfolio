@@ -4,6 +4,7 @@ const projects = [
     stack: "Unity • C#",
     description:
       "3D driving simulator with traffic AI and educational systems.",
+    github: "#",
   },
 
   {
@@ -11,6 +12,7 @@ const projects = [
     stack: "Python • Pygame",
     description:
       "Classic Pac-Man clone featuring BFS ghost pathfinding AI.",
+    github: "#",
   },
 
   {
@@ -18,6 +20,7 @@ const projects = [
     stack: "Unity • C#",
     description:
       "Psychological horror game focused on immersion and atmosphere.",
+    github: "#",
   },
 
   {
@@ -25,6 +28,7 @@ const projects = [
     stack: "Unity • C#",
     description:
       "Typing shooter with dynamic enemy-wave systems.",
+    github: "#",
   },
 ];
 

@@ -1,22 +1,25 @@
+import SectionTitle from "./SectionTitle";
+
 export default function Terminal() {
   return (
-    <section className="bg-black border border-green-500 p-6">
+    <section
+      id="terminal"
+      className="bg-black border border-green-500 p-6"
+    >
 
-      <h2 className="pixel-title text-green-400 mb-6">
-        TERMINAL
-      </h2>
+      <SectionTitle title="TERMINAL" />
 
       <div className="space-y-3 text-green-400">
 
-        <p>{">"} Developer Mode: ON</p>
+        <p>{">"} STATUS: ONLINE</p>
 
-        <p>{">"} Building Cool Stuff...</p>
-
-        <p>{">"} Learning DSA...</p>
+        <p>{">"} Learning Data Structures...</p>
 
         <p>{">"} Exploring AI Systems...</p>
 
-        <p>{">"} STATUS: ACTIVE</p>
+        <p>{">"} Building Games...</p>
+
+        <p>{">"} Current Objective: LEVEL UP</p>
 
       </div>
 

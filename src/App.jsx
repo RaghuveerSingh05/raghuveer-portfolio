@@ -7,11 +7,11 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="flex min-h-screen bg-[#0B1020] text-white">
+    <div className="crt flex bg-[#0B1020] text-white">
 
       <Sidebar />
 
-      <main className="flex-1 p-6 md:p-10 space-y-16">
+      <main className="flex-1 max-w-7xl mx-auto p-6 md:p-12 space-y-24">
 
         <Landing />
 

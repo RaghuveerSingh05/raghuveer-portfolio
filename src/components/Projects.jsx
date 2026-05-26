@@ -1,13 +1,12 @@
 import projects from "../data/projects";
 import ProjectCard from "./ProjectCard";
+import SectionTitle from "./SectionTitle";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
 
-      <h2 className="pixel-title text-xl text-purple-400 mb-6">
-        PROJECTS
-      </h2>
+      <SectionTitle title="PROJECTS" />
 
       <div className="grid md:grid-cols-2 gap-6">
 
@@ -18,6 +17,7 @@ export default function Projects() {
             title={project.title}
             stack={project.stack}
             description={project.description}
+            github={project.github}
           />
 
         ))}
