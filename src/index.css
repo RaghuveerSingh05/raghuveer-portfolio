@@ -27,6 +27,21 @@ body {
 
   z-index: 999;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
+}
 
 .pixel-title {
   font-family: 'Press Start 2P', cursive;

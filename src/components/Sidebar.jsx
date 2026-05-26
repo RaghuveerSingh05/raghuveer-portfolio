@@ -7,7 +7,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <aside className="w-20 md:w-64 min-h-screen bg-[#111827] border-r border-[#374151] p-4 sticky top-0">
+    <aside className="w-24 min-h-screen bg-[#111827] border-r border-[#374151] p-4 sticky top-0">
 
       <h1 className="pixel-title text-xs md:text-lg text-cyan-400 mb-10">
         RAGHUVEER.DEV
