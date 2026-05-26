@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #0B1020;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.pixel-title {
+  font-family: 'Press Start 2P', cursive;
+}
