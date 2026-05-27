@@ -280,3 +280,6 @@ body::after {
   background: linear-gradient(var(--neon-pink), var(--neon-cyan));
   border-radius: 10px;
 }
+html, body {
+  overflow-x: hidden;
+}
