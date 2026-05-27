@@ -20,7 +20,7 @@ export default function MobileNav() {
 
         <a href="#projects"><FaFolder /></a>
 
-        <a href="#terminal"><FaTerminal /></a>
+        
 
         <a href="#contact"><FaEnvelope /></a>
 

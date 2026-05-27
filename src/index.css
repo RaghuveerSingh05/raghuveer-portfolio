@@ -1,4 +1,6 @@
-/* src/index.css */
+/* =========================
+   NEON CYBERPUNK THEME v3
+========================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -6,59 +8,275 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   ROOT COLORS
+========================= */
+
+:root {
+  --bg: #0b0b12;
+  --panel: rgba(18, 18, 28, 0.65);
+
+  --text: #e5e7eb;
+
+  --neon-pink: #ff2bd6;
+  --neon-cyan: #00fff7;
+  --neon-purple: #7c3aed;
+  --neon-blue: #3b82f6;
+}
+
+/* =========================
+   BASE
+========================= */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  color: #1E1B18;
-
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
 
-  background-color: #F4F1E8;
+  background: radial-gradient(circle at top, #1a1a2e, #0b0b12);
+  color: var(--text);
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   GRID BACKGROUND
+========================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
 
   background-image:
-    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0,255,247,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,43,214,0.05) 1px, transparent 1px);
 
-  background-size: 32px 32px;
+  background-size: 60px 60px;
+
+  opacity: 0.25;
+  z-index: -2;
 }
 
-.pixel-title {
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 1px;
+/* =========================
+   AMBIENT GLOW
+========================= */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,43,214,0.12), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(0,255,247,0.10), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(124,58,237,0.08), transparent 60%);
+
+  z-index: -1;
 }
+
+/* =========================
+   CRT EFFECT
+========================= */
 
 .crt::before {
   content: "";
   position: fixed;
   inset: 0;
 
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.02) 50%,
-      transparent 50%
-    );
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 1px,
+    transparent 2px,
+    transparent 4px
+  );
 
-  background-size: 100% 4px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* =========================
+   DIM NEON NAME (NEW)
+========================= */
+
+.dim-name {
+  font-family: 'Space Mono', monospace;
+  color: rgba(0, 255, 247, 0.6);
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 6px rgba(0, 255, 247, 0.18),
+    0 0 14px rgba(0, 255, 247, 0.12);
+
+  transition: 0.3s ease;
+}
+
+.dim-name:hover {
+  color: rgba(255, 43, 214, 0.7);
+
+  text-shadow:
+    0 0 10px rgba(255, 43, 214, 0.2),
+    0 0 18px rgba(0, 255, 247, 0.12);
+}
+
+/* =========================
+   PIXEL TITLE
+========================= */
+
+.pixel-title {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 1px;
+
+  color: var(--neon-cyan);
+
+  text-shadow:
+    0 0 10px rgba(0,255,247,0.5),
+    0 0 20px rgba(0,255,247,0.2);
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.pixel-window {
+  background: var(--panel);
+  border: 1px solid rgba(0,255,247,0.2);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 0 15px rgba(0,255,247,0.08),
+    0 0 30px rgba(255,43,214,0.05);
+
+  transition: 0.25s ease;
+}
+
+.pixel-window:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,43,214,0.5);
+
+  box-shadow:
+    0 0 25px rgba(255,43,214,0.25),
+    0 0 35px rgba(0,255,247,0.15);
+}
+
+/* =========================
+   NEON BORDER CARDS
+========================= */
+
+.neon-border {
+  position: relative;
+  border-radius: 14px;
+
+  background: rgba(10, 10, 18, 0.6);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(0, 255, 247, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 1px;
+
+  background: linear-gradient(
+    90deg,
+    var(--neon-cyan),
+    var(--neon-pink),
+    var(--neon-purple),
+    var(--neon-cyan)
+  );
+
+  background-size: 300% 300%;
+  animation: neonFlow 5s linear infinite;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box,
+               linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 
   pointer-events: none;
-  z-index: 999;
 }
+
+.neon-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(0,255,247,0.12),
+    transparent 70%
+  );
+
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: -1;
+}
+
+.neon-border:hover::after {
+  opacity: 1;
+}
+
+.neon-border:hover {
+  transform: translateY(-4px);
+}
+
+@keyframes neonFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.pixel-btn {
+  background: transparent;
+  color: var(--neon-cyan);
+
+  padding: 10px 14px;
+  border: 1px solid var(--neon-cyan);
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+
+  box-shadow: 0 0 10px rgba(0,255,247,0.2);
+}
+
+.pixel-btn:hover {
+  background: rgba(0,255,247,0.08);
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 25px rgba(0,255,247,0.35);
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F1E8;
+  background: #0b0b12;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3A312B;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #0891B2;
+  background: linear-gradient(var(--neon-pink), var(--neon-cyan));
+  border-radius: 10px;
 }

@@ -1,35 +1,78 @@
 const projects = [
   {
-    title: "RoadWise",
-    stack: "Unity • C#",
+    title: "ColorDash",
+    context: "Built to explore fast-paced reflex mechanics and color-based interaction systems.",
     description:
-      "3D driving simulator with traffic AI and educational systems.",
-    github: "#",
+      "A reaction-based game where players match colors under time pressure with increasing difficulty and scoring system.",
+    stack: "Unity",
+    images: [
+      "/images/colordash/1.png",
+      "/images/colordash/2.png",
+      "/images/colordash/3.png"
+    ],
+    video: "/videos/colordash.mp4",
+    link: {
+      type: "download",
+      url: "https://raghuveer-singh-shekhawat.itch.io/colordash"
+    },
+    status: "featured"
   },
 
   {
-    title: "Pac-Man AI Clone",
+    title: "Pacman AI Clone",
+    context: "Built to understand game AI, pathfinding, and enemy decision-making systems.",
+    description:
+      "A Pac-Man inspired game featuring AI ghosts with different behavioral patterns and chase logic.",
     stack: "Python • Pygame",
-    description:
-      "Classic Pac-Man clone featuring BFS ghost pathfinding AI.",
-    github: "#",
-  },
-
-  {
-    title: "Last Login",
-    stack: "Unity • C#",
-    description:
-      "Psychological horror game focused on immersion and atmosphere.",
-    github: "#",
+    images: [
+      "/images/pacman/1.png",
+      
+    ],
+    video: "/videos/pacman.mp4",
+    link: {
+      type: "github",
+      url: "https://github.com/RaghuveerSingh05/PacMan-pygame"
+    },
+    status: "featured"
   },
 
   {
     title: "KeyStrike",
-    stack: "Unity • C#",
+    context: "A typing-based action game focused on speed, accuracy, and combat mechanics.",
     description:
-      "Typing shooter with dynamic enemy-wave systems.",
-    github: "#",
+      "A hybrid typing + combat game where players attack enemies by typing correctly under pressure.",
+    stack: "Unity",
+    images: [
+      "/images/keystrike/1.png",
+      "/images/keystrike/2.png"
+    ],
+    video: "/videos/keystrike.mp4",
+    link: {
+      type: "download",
+      url: "https://raghuveer-singh-shekhawat.itch.io/keystrike"
+    },
+    status: "featured"
   },
+
+  {
+    title: "Last Login",
+    context: "Built as a real-world system design + UI/UX tracking project.",
+    description:
+      "A system that tracks and displays last login activity with clean UI and state handling logic.",
+    stack: "React",
+    images: [
+      "/images/lastlogin/1.png",
+      "/images/lastlogin/2.png",
+      "/images/lastlogin/3.png",
+      "/images/lastlogin/4.png"
+    ],
+    video: null,
+    link: {
+      type: "github",
+      url: "https://github.com/your-link-here"
+    },
+    status: "queued"
+  }
 ];
 
 export default projects;

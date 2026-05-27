@@ -15,7 +15,7 @@ export default function Skills() {
 
           <div
             key={skill}
-            className="bg-[#E7DFC9] border-4 border-[#3A312B] p-4 text-center hover:-translate-y-1 transition"
+            className="pixel-window mc-block p-4 text-center"
           >
             {skill}
           </div>

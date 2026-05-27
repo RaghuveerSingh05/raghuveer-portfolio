@@ -15,11 +15,11 @@ export default function Contact() {
 
       <SectionTitle title="CONTACT" />
 
-      <div className="bg-[#E7DFC9] border-4 border-[#3A312B] p-6 space-y-6">
+      <div className="bg-[#0b0b12] text-gray-100 p-6 space-y-6">
 
         <div className="grid md:grid-cols-2 gap-4">
 
-          <div className="border-4 border-[#3A312B] p-4">
+          <div className="border-4 border-[#7e31e2] p-4">
 
             <p className="text-sm mb-2">
               EMAIL
@@ -30,14 +30,14 @@ export default function Contact() {
               <FaEnvelope />
 
               <p>
-                raguhveersinghshekhawat2005@gmail.com
+                raghuveersinghshekhawat2005@gmail.com
               </p>
 
             </div>
 
           </div>
 
-          <div className="border-4 border-[#3A312B] p-4">
+          <div className="border-4  border-[#7e31e2] p-4">
 
             <p className="text-sm mb-2">
               PHONE
