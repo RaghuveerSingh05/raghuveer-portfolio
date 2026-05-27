@@ -58,7 +58,7 @@ const projects = [
     title: "Last Login",
     context: "Built as a real-world system design + UI/UX tracking project.",
     description:
-      "A system that tracks and displays last login activity with clean UI and state handling logic.",
+      "Last Login is a Unity-based narrative exploration game where players uncover a mystery through fragmented system logs and hidden data.It focuses on atmospheric storytelling and curiosity-driven discovery to reveal what happened before the final login.",
     stack: "React",
     images: [
       "/images/lastlogin/1.png",
